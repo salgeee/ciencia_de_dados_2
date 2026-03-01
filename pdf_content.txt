@@ -1,0 +1,161 @@
+
+--- PAGINA 1 ---
+Universidade Federal de Uberlândia 
+Disciplina: FACOM32701 – Ci ência de Dados II
+Avaliação: 30 pontos
+Projeto
+Descrição do Projeto
+Este  roteiro  apresenta  temas  do  projeto  para  a  disciplina  com  foco  em  algoritmos  não
+supervisionados, aplicados aos dados nacionais. Os temas abrangem áreas relevantes como
+segurança pública, saúde e educação, e permitem que cada grupo (até 3 alunos) explore um
+conjunto de dados distinto.
+Os projetos devem contemplar a análise exploratória, pré-processamento e limpeza de dados,
+aplicação de técnicas não supervisionadas (K-Means, Hier árquico, DBSCAN, etc), visualização
+e interpretação dos agrupamentos e conclusões e possíveis aplicações práticas.
+Descobrir padrões naturais, estruturas ocultas e agrupamentos intrínsecos nos dados municipais
+sem labels pré-definidos .
+Cada grupo deve selecionar um tema e um dataset diferente e os dados devem ser públicos e
+nacionais (portais governamentais (federal, estadual e municipal), IBGE, DATASUS, INEP etc.).
+Temas
+Cada equipe deverá escolher um único tema para o projeto e apresentação do seminário. A
+escolha do tema seguirá a ordem (método FCFS - "First Come, First Served"). 
+PROJETO 1 - Análise de Crimes no Brasil
+Fonte: https://dados.gov.br/
+Descrição: Agrupamento de municípios com base nos tipos e frequências de crimes.
+Objetivo: 
+•Identificar  as  combinações  de  crimes  são  mais  frequentes  em  municípios  do
+Norte/Nordeste vs. Sul/Sudeste
+•Municípios com alto IDH têm perfil criminal diferente daqueles com baixo IDH
+•O crescimento econômico está associado a mudanças no tipo de criminalidade
+PROJETO 2 - Agrupamento de Boletins de Ocorrência
+Fonte: https://www.seguranca.mg.gov.br/
+Descrição: Agrupar tipos de crimes por características como horário, local e perfil do suspeito.
+Objetivo: 
+•Detectar padrões temporais e espaciais de criminalidade.
+•Crimes com arma de fogo estão concentrados em regiões específicas e horários
+•Há associação entre tipo de local (ex.: bares) e crimes violentos.
+PROJETO 3 - Agrupamento de Municípios pela Incidência de Doenças
+Fonte: DATASUS - https://opendatasus.saude.gov.br/
+Descrição: Agrupar municípios conforme taxas de doenças (dengue, covid, tuberculose, etc.).
+1
+
+
+--- PAGINA 2 ---
+Objetivo:
+•Identificar regiões com perfis epidemiológicos semelhantes.
+•Municípios onde múltiplas doenças ocorrem simultaneamente em taxas elevadas, e onde
+fatores socioeconômicos amplificam seus impactos
+•Agrupamento de doenças negligenciadas coincidem com regiões de baixo IDH
+PROJETO 4 - Desempenho Escolar no ENEM
+Fonte: ENEM - https://www.gov.br/
+Descrição: Agrupamento de estudantes por desempenho em áreas do conhecimento.
+Objetivo: 
+•Identificar perfis de desempenho e fatores correlatos (escola, região, renda).
+•O percentual de estudantes de baixa renda que alcançam o agrupamento Excelente
+•Escolas públicas de alto IDEB conseguem 'quebrar' o determinismo socioeconômico
+PROJETO 5 -  Padrões de Exportação e Importação no Brasil
+Fonte: DataViva + ComexStat
+Descrição: Descobrir agrupamentos de estados/setores por perfil de exportação.
+Objetivo:
+•Estados do Norte/Nordeste são mais integrados a economias emergentes, enquanto
+Sul/Sudeste aos desenvolvidos
+•Estados com pauta similar à Rússia/Ucrânia (trigo, fertilizantes) foram mais afetados pela
+guerra de 2022
+•Há correlação entre exportações de alta tecnologia e investimento estadual em P&D
+PROJETO 6 - Análise de Agrupamentos de Desmatamento e Uso do Solo
+Fonte:INPE (PRODES, MapBiomas)
+Descrição: Identificar padrões de uso da terra e desmatamento entre regiões
+Objetivo:
+•Como os padrões de desmatamento se diferenciam entre biomas
+•Existem padrões de "desmatamento evitado" (conservação)
+•Como o desmatamento se relaciona com outros indicadores ambientais?
+PROJETO 7 - Agrupamento de Municípios pela Incidência de Doenças
+Fonte: Vigitel
+Descrição: Agrupar indivíduos por estilo de vida e presença de doenças crônicas.
+Objetivo: 
+•Quais são os principais padrões alimentares da população adulta brasileira, e como se
+distribuem geograficamente?
+•Como os clusters de hábitos saudáveis variam por idade e escolaridade?
+•Depressão está associada a qual cluster de hábitos, e como interage com doenças
+físicas?
+PROJETO 8 - Padrões de Acidentes de Trânsito no Brasil
+Fonte: DENATRAN / DataGov
+Descrição: identificar padrões de acidentes (localização, horário, tipo, gravidade).
+Objetivos:
+2
+
+--- PAGINA 3 ---
+•Quais trechos de 1km nas rodovias federais têm densidade de acidentes fatais 3x acima
+da média nacional?
+•Sextas-feiras  à  noite  concentram  30%  dos  acidentes  com  embriaguez,  enquanto
+domingos à tarde têm mais colisões traseiras em retornos de viagem?
+•Horário de pico em rodovias de acesso às capitais: colisões traseiras são 70% dos
+acidentes?
+PROJETO 9 - Tipologias de Consumo e Acesso a Internet no Brasil 
+Fontes IBGE: PNAD Contínua TIC 
+Uso de internet, smartphone, TV, equipamentos. 
+Descrição: Descobrir perfis digitais da população.
+Objetivos:
+•Renda determina qualidade (fibra vs. móvel pré-pago), não apenas acesso
+•Alguns usam internet para gerar renda, outros apenas para consumo
+•Exclusão digital persiste em periferias urbanas, não só áreas rurais
+Etapas de Desenvolvimento
+Coleta de Dados
+•Baixar datasets públicos em formato CSV/JSON.
+•Verificar se há valores faltantes e se a base é representativa.
+Pré-processamento
+•Normalização e padronização dos dados.
+•Transformações
+•Remoção de outliers (se necessário).
+Análise Exploratória (EDA)
+•Estatísticas descritivas, matriz de correlação (pearson/spearman), histogramas, boxplots.
+•Identificar variáveis altamente correlacionadas; reduzir redundância (feature selection ou
+PCA preliminar).
+•Sugestões: PCA para variância explicada. t-SNE ou UMAP para visualização 2D/3D.
+Aplicação de Algoritmos
+•Testar diferentes métodos de clusterização.
+•Avaliar métricas de coesão e separação (ex.: silhouette score, K por Elbow, Silhouette
+Score, Davies-Bouldin, Calinski-Harabasz).
+•Testar estabilidade: rodar K-Means com várias sementes (ex.: seeds = [0,1,2,42,100]) e
+comparar ARI/normalizado mutual info entre execuções; ou usar bootstrap.
+•Técnicos: silhouette ≥ 0.25 como referência inicial (depende do problema); estabilidade
+de clusters (ARI entre runs > 0.8 ideal). 
+Interpretação e Conclusões
+•Descrever os padrões observados.
+•Relacionar os clusters com possíveis explicações.
+•Discutir implicações políticas e limitações dos dados.
+3
+
+--- PAGINA 4 ---
+Apresentação dos Resultados
+•Slides e Relatório técnico (6 páginas)
+•Visualizações com matplotlib, seaborn, ou plotly
+•vídeo curto (3–5 min) demonstrando programa
+Entregáveis
+•Notebook  Jupyter  (ou  .py  modular)  com  todo  o  pipeline  (aquisição,  EDA,  pré-
+processamento, clustering, avaliação, visualizaç ões).
+•Relatório técnico (PDF, 6 páginas)  com: introdução, descrição dos dados, metodologia,
+resultados (tabelas, gráficos, mapas), discussão e conclusões.
+•Apresentação  (slides)  destacando  método,  principais  achados  e  limitações.  Ser ão
+alocados 20 minutos para apresentação  junto ao professor.
+•Código  e  dados  (ou  scripts  de  download)  em  repositório  GitHub  com  README
+explicando como reproduzir.
+•Vídeo curto (3–5 min) demonstrando o programa
+Critérios de Avaliação
+Critério Peso (%)Descrição
+Coleta e preparação de dados 20%Seleção adequada e limpeza eficiente
+Aplicação dos algoritmos 25%Escolha coerente e implementação correta
+Interpretação dos resultados 20%Clareza nas análises e conclusões
+Visualização e relatório 25%Apresentação, vídeo e design dos gráficos
+Originalidade e contribuição 10%Relevância e criatividade da proposta
+Definição dos Temas e Prazos
+•O  TEMA,  MATRÍCULA e  NOME dos  estudantes  (equipe)  de  ser  enviado  pelo  link
+“Escolha de Tema” no Moodle-UFU  até o dia 18/12/2025. 
+◦Lembre-se que é  apenas um tema por equipe  sendo respeitado a ordem FCFS
+(informações no Link: Fórum).  
+◦Essas equipes serão avaliadas e validadas pelo Professor de acordo com as regras
+estabelecidas.
+•Prazo de entrega da documentação 27/02/2026.  Posterior a esse prazo não será aceito
+os documentos.
+•Apresentações ocorrerão entre os dias 02/03/2026 e 09/03/2026.
+4
