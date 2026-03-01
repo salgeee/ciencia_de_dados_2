@@ -206,25 +206,12 @@ kneed>=0.8.0
 scipy>=1.9.0
 ```
 
----
-
-## 📅 Cronograma
-
-| Fase | Descrição | Status |
-|------|-----------|--------|
-| 1 | Aquisição e EDA | ✅ Completo |
-| 2 | Pré-processamento | ✅ Completo |
-| 3 | Clustering | ✅ Completo |
-| 4 | Interpretação | ✅ Completo |
-| 5 | Relatório e Apresentação | ⏳ Pendente |
-
----
-
 ## 👥 Equipe
 
-- **Integrante 1:** [Nome] - [Matrícula]
-- **Integrante 2:** [Nome] - [Matrícula]
-- **Integrante 3:** [Nome] - [Matrícula]
+Leonardo Ferreira Salge (12311BSI307)
+Vinicius Ferreira Salge (12311BSI308)
+Daniel Solis Salge (12311BSI305)
+Guilherme Gomes Alves (12311BSI306)
 
 ---
 
