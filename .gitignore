@@ -179,3 +179,8 @@ cython_debug/
 #  refer to https://docs.cursor.com/context/ignore-files
 .cursorignore
 .cursorindexingignore
+.claude
+.venv_pdf
+.pdf_context.txt
+.planejamento_projeto_10_enem_clustering.md
+.fix_04_complete.py
