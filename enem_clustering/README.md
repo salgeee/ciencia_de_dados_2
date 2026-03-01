@@ -79,12 +79,21 @@ pip install -r requirements.txt
 
 ### 2. Configuração dos Dados
 
+O arquivo `RESULTADOS_2024.rar` está compactado devido ao seu tamanho original.
+
+Para utilizar o dataset:
+
+1. Extraia o conteúdo
+2. Utilize o arquivo CSV extraído na pasta correspondente
+
+Observação: O dataset foi compactado para otimizar o armazenamento no repositório.
+
 Os dados do ENEM 2024 devem estar em:
 ```
-data/raw/RESULTADOS_2024.csv
+data/raw/RESULTADOS_2024.rar
 ```
-
 Ou ajuste o caminho no notebook `01_eda.ipynb`:
+
 ```python
 caminho_dados = '..\microdados_enem_2024\DADOS\RESULTADOS_2024.csv'
 ```
